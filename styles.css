@@ -28,18 +28,19 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.spacer {
+    box-sizing: border-box;
+    padding: 40px;
+}
+
 h1 {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     font-size: 1.1rem;
 }
 
 p {
-    max-width: 51ch;
-}
-
-p.form-side-content {
-    font-weight: bold;
+    max-width: 56ch;
 }
 
 .content {
@@ -66,16 +67,7 @@ p.form-side-content {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 38%;
-}
-
-#form-side {
-    width: 62%;
-    background-color: #F5F5F5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 10pt;
+    width: 37%;
 }
 
 #logo-side {
@@ -101,7 +93,7 @@ form {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 32px;
     box-shadow: 3px 7px 5px -5px silver;
 }
 
@@ -111,13 +103,7 @@ form {
     gap: 30px;
 }
 
-.form-item {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 10px;
 
-}
 
 .credits {
     color: white;
@@ -135,13 +121,35 @@ button {
     width: 11rem;
     border: none;
     border-radius: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px silver;
 }
 
 .form-side-content {
-    padding: 1rem;
+    padding: 16px;
+    padding-left: 40px;
 }
 
 /* form styling */
+#form-side {
+    width: 63%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 14px;
+    font-size: 10pt;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+
+}
+
 input {
     width: 12.3rem;
     border: .5px #E5E7EB solid;
@@ -149,6 +157,10 @@ input {
     background-color: white;
     height: 1.4rem;
     padding-left: .33rem;
+}
+
+.input-column {
+    margin-right: 18px;;
 }
 
 label{
@@ -169,7 +181,11 @@ input:focus {
 }
 
 .cta {
-    font-size: 14pt;
+    font-size: 13pt;
+    font-weight: 600;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 14px 0px;
 }
 
 /* logo styling */
@@ -201,4 +217,8 @@ img {
     font-size: 54pt;
     margin-top: 18px;
     color: #FAF9F6;
+}
+
+p.credits {
+    font-weight: 50;
 }
