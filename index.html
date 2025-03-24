@@ -3,9 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Odin Sign Up Form</title>
 </head>
 <body>
-  <p>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+  <div class="content">
+    <div class="main-frame">
+      <div class="sides" id="logo-side">
+        <div class="logo">
+          <div class="logo-image">
+            <img src="static/odin-lined.png" alt="Odin-Project Logo">
+          </div>
+          <h2 class="odin-logo">
+            ODIN
+          </h2>
+        </div>
+        <div class="photo-creds">
+          <p class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+        </div>
+      </div>
+      <div class="sides" id="form-side">
+        <p class="form-side-content cta">
+          This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+          Sign up <em>now</em> to get started.
+          <br><br>
+          You <em>know</em> you want to.
+        </p>
+        <form action="" method="post">
+          <h1>Let's Do This!</h1>
+          
+          <div class="user-inputs">
+            <div class="column-left input-column">
+              <!-- First Name -->
+              <div class="form-item">
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" name="first_name" id="first_name" required>
+              </div>
+              <!-- Email -->
+              <div class="form-item">
+                <label for="email">EMAIL</label>
+                <input type="mail" name="email" id="email" required>
+              </div>
+              <!-- password -->
+              <div class="form-item">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" minlength="8" required>
+              </div>
+            </div>
+
+            <div class="column-right input-column">
+              <!-- Last Name -->
+              <div class="form-item">
+                <label for="last_name" required>LAST NAME</label>
+                <input type="text" name="last_name" id="last_name">
+              </div>
+              <!-- Phone -->
+              <div class="form-item">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone">
+              </div>
+              <!-- Confirm Password -->
+              <div class="form-item">
+                <label for="password_confirm">PASSWORD</label>
+                <input type="password" name="password_confirm" id="password_confirm" minlength="8" required>
+              </div>
+            </div>
+          </div>
+
+        </form>
+        
+        <div class="form-side-content">
+          <button type="submit">Create Account</button>
+          <p>
+            Already have an account? <span class="login"><a href="#">Log in</a></span>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
